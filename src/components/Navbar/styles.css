@@ -1,0 +1,36 @@
+.navbar{
+  background: #24292e;
+}
+.span{
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+.search{
+  background: hsla(0,0%,100%,.125);
+  box-shadow: none;
+  border-radius: 5px; 
+}
+.search-input{
+  background: none !important;
+  border:0 !important;
+}
+
+input:focus{
+  background: white !important ;
+  box-shadow: none !important;
+}
+
+input:focus ~ #slashImage{
+  display: none;
+}
+
+.search:focus-within{
+  background: white;
+  padding-right: 25px;
+}
+
+img{
+  padding-right: 10px;
+}
