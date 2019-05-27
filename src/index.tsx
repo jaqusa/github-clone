@@ -9,7 +9,7 @@ const Root =(
   <BrowserRouter>
     <Switch>
       <Route path="/" component={Results} /> 
-      <Route path="/profile/:{id}"component={Profile} />
+      <Route path="/profile/:id"component={Profile} />
     </Switch>
   </BrowserRouter>
 );

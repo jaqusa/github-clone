@@ -5,7 +5,7 @@ export default class List extends React.Component<IProps, any> {
     return this.props.usersList.map((user: any, i: number) => {
       return (
         <div className="card pb-4" key={user.id}>
-          <a href={`/profile/${user.id}`} onClick={(e)=>{return e.preventDefault()}}>
+          <a href={`/profile/${user.id}`} onClick={(e)=>{e.preventDefault() window.history.go()}}>
             <div className="row no-gutters">
               <div className="col-md-2 mt-4 ml-4">
                 <img src={user.avatar_url} className="card-img" alt="..." />
