@@ -8,7 +8,7 @@ export default class List extends React.Component<IProps, any> {
         <div className="card pb-4" key={user.id}>
           <div className="row no-gutters">
             <div className="col-md-2 mt-4 ml-4">
-              <img src={user.avatar_url} className="card-img" />
+              <img src={user.avatar_url} className="card-img" alt="avatar_url" />
             </div>
             <div className="col-md-4">
               <div className="card-body">

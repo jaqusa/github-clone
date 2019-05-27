@@ -22,7 +22,6 @@ export default class Detail extends React.Component<IProps, any> {
       user: userDetail,
       repositories: repositoriesDetail,
     });
-    console.log(this.state);
   }
 
   render() {
@@ -31,7 +30,7 @@ export default class Detail extends React.Component<IProps, any> {
         <div className="row">
           <div className="col">
             <div className="card-info">
-              <img src={this.state.user.avatar_url} className="avatar" />
+              <img src={this.state.user.avatar_url} className="avatar" alt="avatar_url"/>
               <div className="card-body">
                 <h4 className="card-title">{this.state.user.name}</h4>
                 <h5 className="card-subtitle">{this.state.user.login}</h5>
