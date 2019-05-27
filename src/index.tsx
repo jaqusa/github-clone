@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import Results from './components/Results/Results';
-import Profile from './components/Profile/Profile'
+import Detail from './components/Detail/Detail'
 
 const Root =(
-  <BrowserRouter>
+  <Router>
     <Switch>
-      <Route path="/" component={Results} /> 
-      <Route path="/profile/:id"component={Profile} />
+      <Route exact path="/" component={Results} /> 
+      <Route path="/:name"component={Detail} />
     </Switch>
-  </BrowserRouter>
+  </Router>
 );
 
 ReactDOM.render(Root, document.getElementById('root'));

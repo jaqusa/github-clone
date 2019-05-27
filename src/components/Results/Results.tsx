@@ -16,14 +16,20 @@ export default class Results extends React.Component<any, any> {
     });
   }
 
+  toShow() {
+    if (this.state.usersList[0] !== undefined) {
+      return <List List={this.state.usersList} />;
+    } else {
+      return <h3 className="text-center">searching user ...</h3>;
+    }
+  }
+
   render() {
     return (
       <div>
         <Navbar getUsersList={this.getUsersList.bind(this)} />
-        <div className="col-md-8 ml-4 mt-4">
-          <div className="row">
-            <List usersList={this.state.usersList} />
-          </div>
+        <div>
+          <div className="column">{this.toShow()}</div>
         </div>
       </div>
     );

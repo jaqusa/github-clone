@@ -1,0 +1,13 @@
+.info li{
+  list-style: none;
+}
+.card-info{
+  width: 25rem;
+}
+.avatar{
+  padding: 0 !important;
+}
+.none{
+  text-decoration: none;
+  justify-content: center;
+}
